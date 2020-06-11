@@ -1,0 +1,8 @@
+<div class="container">
+  <h1>Create a new beverage</h1>
+  <%= simple_form_for([@cocktail]) do |f| %>
+  <!-- [parent_element_instance, child_element_instance] -->
+  <%= f.input :name %>
+  <%= f.submit class: "btn btn-success" %>
+  <% end %>
+</div>

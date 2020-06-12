@@ -11,3 +11,73 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+
+.card img {
+  object-fit: cover;
+  width: 286px;
+  height: 186.43px;
+}
+
+.cocktails {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.add {
+  margin-top: 15px;
+  text-align: right;
+}
+
+.imageclass {
+  float:left;
+  width:200px;
+  height:20px;
+}
+
+.textclass {
+  float:left;
+  width:300px;
+  height:20px;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner-cocktail {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  align-items: center;
+  img {
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 650px;
+    height: 400px;
+  }
+}
+
+.ingredients {
+  margin-left: -25px;
+}
+
+.go-back {
+  padding: 5px 10px;
+  background-color: #ccc;
+  margin-top: 10px;
+  color: black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 780px) {
+  .banner-cocktail {
+    grid-template-columns: 1fr;
+  }
+}

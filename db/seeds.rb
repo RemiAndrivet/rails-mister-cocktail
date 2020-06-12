@@ -37,4 +37,4 @@ end
 
 final_array
 puts "4. finished"
-puts "5. You have #{Ingredient.count} ingredients seeded "
+puts "5. You have #{Ingredient.count} ingredients seeded"

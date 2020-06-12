@@ -2,5 +2,8 @@
   <h1>All our cocktails</h1>
   <ul><%@cocktails.each do |cocktail|%></ul>
     <li><%=cocktail.name%></li>
+    <%=link_to "More info", cocktail_path(cocktail)%> /
+    <%= link_to 'Delete', cocktail_path(cocktail), method: :delete, data: { confirm: 'Are you sure you want to delete this delicious beverage ?' } %>
   <%end%>
+  <p><%= link_to "Add a new cocktail", new_cocktail_path(@cocktail)%></p>
 </div>
